@@ -1,6 +1,23 @@
+
+# Terraform state and working directory
 .terraform/
 *.tfstate
 *.tfstate.*
-*.pem
 crash.log
 crash.*.log
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Secret configuration
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Environment files
+.env
+.env.*
+!.env.example
